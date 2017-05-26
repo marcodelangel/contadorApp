@@ -1,26 +1,141 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dNi-7e-yMq">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Enter a number-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="contadorApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c8Q-oB-Df7">
+                                <rect key="frame" x="35" y="269" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="fqh-R5-NMr"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQk-7b-eeR">
+                                <rect key="frame" x="140.5" y="469" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fF0-pK-kJa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0R-7L-dk0">
+                                <rect key="frame" x="239" y="469" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wwL-QO-Gkd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jvi-JX-n6W">
+                                <rect key="frame" x="48" y="469" width="33" height="30"/>
+                                <state key="normal" title="Decr"/>
+                                <connections>
+                                    <action selector="decrease:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fig-OK-keP"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c8Q-oB-Df7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9Gc-3n-kuo"/>
+                            <constraint firstItem="c8Q-oB-Df7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q4l-oO-SCL"/>
+                            <constraint firstItem="tQk-7b-eeR" firstAttribute="leading" secondItem="Jvi-JX-n6W" secondAttribute="trailing" constant="59.5" id="awO-8X-PbQ"/>
+                            <constraint firstItem="Jvi-JX-n6W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="beV-F3-zg2"/>
+                            <constraint firstItem="tQk-7b-eeR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ghP-Po-NCk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="e0R-7L-dk0" secondAttribute="bottom" constant="69" id="itB-y9-sI3"/>
+                            <constraint firstItem="tQk-7b-eeR" firstAttribute="top" secondItem="c8Q-oB-Df7" secondAttribute="bottom" constant="170" id="nrZ-su-Nga"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="e0R-7L-dk0" secondAttribute="trailing" constant="35" id="qws-Oo-DhN"/>
+                            <constraint firstItem="e0R-7L-dk0" firstAttribute="leading" secondItem="tQk-7b-eeR" secondAttribute="trailing" constant="59.5" id="ruR-1u-Y6t"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tQk-7b-eeR" secondAttribute="bottom" constant="69" id="w6V-OS-8SW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jvi-JX-n6W" secondAttribute="bottom" constant="69" id="x7A-gS-2WF"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Enter a number" id="wHj-cS-9IE">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="WDZ-uV-IKQ">
+                            <connections>
+                                <action selector="saveNumber:" destination="BYZ-38-t0r" id="cwf-f6-aGw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textField" destination="c8Q-oB-Df7" id="k51-ZW-QCj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1764" y="80"/>
+        </scene>
+        <!--Number Table-->
+        <scene sceneID="y3w-xD-d0O">
+            <objects>
+                <tableViewController id="QAv-ek-w2Y" customClass="TableViewController" customModule="contadorApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="pP5-ol-OJU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="AEN-S3-XzA">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AEN-S3-XzA" id="5So-fA-NJS">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QAv-ek-w2Y" id="3oP-9s-nS7"/>
+                            <outlet property="delegate" destination="QAv-ek-w2Y" id="8Rb-Nr-OS1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Number Table" id="zbo-U9-0Ys">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Q1k-mF-XP3">
+                            <connections>
+                                <action selector="newNumber:" destination="QAv-ek-w2Y" id="l5H-7f-oxa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="showNumber" id="3Uf-yS-xC5"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4C6-qX-dW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1011" y="79"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Cd9-IE-ENQ">
+            <objects>
+                <navigationController id="dNi-7e-yMq" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="q4z-ys-zpE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QAv-ek-w2Y" kind="relationship" relationship="rootViewController" id="8rD-95-bv4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j7S-x3-vG2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="81"/>
         </scene>
     </scenes>
 </document>
