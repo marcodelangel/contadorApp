@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F0726F61ED90E220076C8C4 /* Extension - UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0726F51ED90E220076C8C4 /* Extension - UserDefaults.swift */; };
 		FD7957851ECD25540070C458 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7957841ECD25540070C458 /* AppDelegate.swift */; };
 		FD7957871ECD25540070C458 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7957861ECD25540070C458 /* ViewController.swift */; };
 		FD79578A1ECD25540070C458 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7957881ECD25540070C458 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F0726F51ED90E220076C8C4 /* Extension - UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension - UserDefaults.swift"; sourceTree = "<group>"; };
 		FD7957811ECD25540070C458 /* contadorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = contadorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD7957841ECD25540070C458 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD7957861ECD25540070C458 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				FD7957841ECD25540070C458 /* AppDelegate.swift */,
 				FD7957861ECD25540070C458 /* ViewController.swift */,
 				FD7957961ECD30720070C458 /* TableViewController.swift */,
+				8F0726F51ED90E220076C8C4 /* Extension - UserDefaults.swift */,
 				FD7957881ECD25540070C458 /* Main.storyboard */,
 				FD79578B1ECD25540070C458 /* Assets.xcassets */,
 				FD79578D1ECD25540070C458 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			files = (
 				FD7957871ECD25540070C458 /* ViewController.swift in Sources */,
 				FD7957971ECD30720070C458 /* TableViewController.swift in Sources */,
+				8F0726F61ED90E220076C8C4 /* Extension - UserDefaults.swift in Sources */,
 				FD7957851ECD25540070C458 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +310,7 @@
 				FD7957951ECD25540070C458 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

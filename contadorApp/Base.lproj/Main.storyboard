@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dNi-7e-yMq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dNi-7e-yMq">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,21 +35,21 @@
                                 <rect key="frame" x="140.5" y="469" width="39" height="30"/>
                                 <state key="normal" title="Reset"/>
                                 <connections>
-                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fF0-pK-kJa"/>
+                                    <action selector="reset" destination="BYZ-38-t0r" eventType="touchUpInside" id="aTH-4n-kRL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0R-7L-dk0">
                                 <rect key="frame" x="239" y="469" width="30" height="30"/>
-                                <state key="normal" title="Add"/>
+                                <state key="normal" title="Incr"/>
                                 <connections>
-                                    <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wwL-QO-Gkd"/>
+                                    <action selector="add" destination="BYZ-38-t0r" eventType="touchUpInside" id="lR5-x8-UEm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jvi-JX-n6W">
                                 <rect key="frame" x="48" y="469" width="33" height="30"/>
                                 <state key="normal" title="Decr"/>
                                 <connections>
-                                    <action selector="decrease:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fig-OK-keP"/>
+                                    <action selector="decrease" destination="BYZ-38-t0r" eventType="touchUpInside" id="taD-Jg-Efb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -69,9 +69,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Enter a number" id="wHj-cS-9IE">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="WDZ-uV-IKQ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="WDZ-uV-IKQ">
                             <connections>
-                                <action selector="saveNumber:" destination="BYZ-38-t0r" id="cwf-f6-aGw"/>
+                                <action selector="saveNumber" destination="BYZ-38-t0r" id="wi7-Fu-1lJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
